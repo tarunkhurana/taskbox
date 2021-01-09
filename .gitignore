@@ -1,3 +1,4 @@
 node_modules
 srcold
 build
+src/__snapshots__

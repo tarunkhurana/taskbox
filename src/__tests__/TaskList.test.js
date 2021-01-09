@@ -12,9 +12,9 @@ it('renders pinned tasks at the start of the list', () => {
   ReactDOM.render(<WithPinnedTasks {...WithPinnedTasks.args} />, div);
 
   const lastTaskInput = div.querySelector(
-    '.list-item:nth-child(1) input[value="Task 6 (pinned)"]'
+    '.list-item:nth-child(1) input[value="Task 6(Pinned)"]'
   );
-  expect(lastTaskInput).toContainElement(null);
+  expect(lastTaskInput).toContainElement(lastTaskInput);
 
   ReactDOM.unmountComponentAtNode(div);
 });

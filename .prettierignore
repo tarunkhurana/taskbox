@@ -1,0 +1,9 @@
+# Ignore artifacts:
+package.json
+package-lock.json
+.gitignore
+tsconfig.json
+webpack.config.js
+yarn.lock
+Readme.md.txt
+node_modules

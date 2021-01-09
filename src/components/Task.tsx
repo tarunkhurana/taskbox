@@ -24,7 +24,15 @@ export default function Task(props: TaskProps): JSX.Element {
         />
       </label>
       <div className='title'>
-        <input type='text' value={title} readOnly placeholder='Input title' />
+        <input
+          type='text'
+          value={title}
+          readOnly
+          placeholder='Input title'
+          style={{
+            background: 'red',
+          }}
+        />
       </div>
       <div
         aria-hidden='true'

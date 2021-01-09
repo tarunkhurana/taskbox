@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "lint": " eslint **/*.tsx --fix",
+    "lint": " eslint --fix",
     "start": "npm run lint && webpack serve --mode development --env development",
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
@@ -93,8 +93,9 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "*.{js,jsx,ts,tsx,json,md}": [
       "eslint --fix"
-    ]
+    ],
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   }
 }

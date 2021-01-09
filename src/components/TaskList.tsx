@@ -12,26 +12,17 @@ export function TaskList(props: TaskListProps): JSX.Element {
     onArchiveTask,
   };
 
-  const LoadingRow = (
-    <div className='loading-item'>
-      <span className='glow-checkbox' />
-      <span className='glow-text'>
-        <span>Loading</span> <span>cool</span> <span>state</span>
-      </span>
-    </div>
-  );
+  // const LoadingRow = (
+  //   <div className='loading-item'>
+  //     <span className='glow-checkbox' />
+  //     <span className='glow-text'>
+  //       <span>Loading</span> <span>cool</span> <span>state</span>
+  //     </span>
+  //   </div>
+  // );
 
   if (loading) {
-    return (
-      <div className='list-items'>
-        {LoadingRow}
-        {LoadingRow}
-        {LoadingRow}
-        {LoadingRow}
-        {LoadingRow}
-        {LoadingRow}
-      </div>
-    );
+    return <div className='list-items'>Loading...</div>;
   }
 
   if (tasks.length === 0) {

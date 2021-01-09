@@ -2,3 +2,4 @@ node_modules
 srcold
 build
 src/__snapshots__
+build-storybook.log
